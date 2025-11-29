@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prajval P | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajval P | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
+    <div class="background-gradient"></div>
+
+    <!-- Fixed Left Sidebar -->
     <aside class="sidebar">
-      <img src="assets/profile.jpg" alt="Prajval P" class="profile-pic"/>
-      <h1>Prajval P</h1>
-      <p>Data Scientist | GenAI Engineer</p>
-      <p><strong>Email:</strong><br><a href="mailto:prajvalprasannakumar@gmail.com">prajvalprasannakumar@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong><br><a href="https://linkedin.com/in/prajval-p-b0188b1a0" target="_blank">linkedin.com/in/prajval-p</a></p>
-      <p><strong>GitHub:</strong><br><a href="https://github.com/prajvalprasanna" target="_blank">github.com/prajvalprasanna</a></p>
+        <img src="" alt="Profile" class="profile-img" id="profile-img">
+        <h1 class="profile-name" id="profile-name"></h1>
+        <p class="profile-title" id="profile-title"></p>
+        <p class="profile-about" id="profile-about"></p>
+        <!-- 1. Contact Info moved here -->
+        <div class="contact-info" id="contact-info"></div>
+        <div class="social-links" id="social-links"></div>
+        <!-- 2. New Timeline Section -->
+        <div class="timeline-section">
+            <h3 class="timeline-title">Experience</h3>
+            <div class="timeline" id="experience-timeline"></div>
+
+            <h3 class="timeline-title">Education</h3>
+            <div class="timeline" id="education-timeline"></div>
+        </div>
+
+
     </aside>
 
-    <main class="content">
-      <section>
-        <h2>About Me</h2>
-        <p>I'm a passionate Data Scientist with 3.5 years of experience, certified in Azure AI, and currently working on Generative AI agents for financial and telecom domains. Skilled in Python, GenAI, NLP, and large-scale ML systems.</p>
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-          <img src="assets/project1.jpg" alt="Financial News Agent"/>
-          <div>
-            <h3><a href="https://github.com/prajvalprasanna/Financial-News-Agent-using-Google-Gemini" target="_blank">Financial News Agent with Gemini</a></h3>
-            <p>A GenAI-powered agent that fetches and summarizes news, proposes investment actions, and evaluates plans using Google Gemini and RAG pipelines.</p>
-          </div>
+    <!-- Scrollable Right Content Area -->
+    <main class="main-content">
+        <!-- Latest Work -->
+        <section class="latest-work">
+            <div class="section-title">Featured Work</div>
+            <div id="featured-content">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+        <!-- Controls (Sticky) -->
+        <div class="controls-bar">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('projects')">Projects</button>
+                <button class="tab-btn" onclick="switchTab('articles')">Articles</button>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search projects, tags..." onkeyup="filterContent()">
+            </div>
         </div>
 
-        <div class="project">
-          <img src="assets/project2.jpg" alt="Portfolio Optimization"/>
-          <div>
-            <h3><a href="https://github.com/prajvalprasanna/Comparative-Analysis-of-ML-Models-Used-in-Portfolio-Optimization" target="_blank">Portfolio Optimization Analysis</a></h3>
-            <p>Compared GNNs, HRP and other models on Sharpe ratio, Sortino ratio, and Max Drawdown for risk-adjusted returns.</p>
-          </div>
+        <!-- Grid Content -->
+        <div class="content-grid" id="content-grid">
+            <!-- Populated by JS -->
         </div>
-      </section>
-
-      <section>
-        <h2>Experience</h2>
-        <p><strong>Tata Consultancy Services (2021 - 2025)</strong><br>Built a Tariff Plan Recommender System using ML + GenAI on Azure, reducing churn by 7%. Delivered production-ready APIs using TIBCO Business Works, and cleaned datasets from 10M+ users.</p>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <p><strong>M.Sc. Data Science</strong> – Manipal Academy of Higher Education (2022 - 2024)</p>
-        <p><strong>B.E. ECE</strong> – APS College of Engineering</p>
-      </section>
     </main>
-  </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
