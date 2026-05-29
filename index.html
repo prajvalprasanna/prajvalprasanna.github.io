@@ -45,15 +45,25 @@
                 <!-- Populated by JS -->
             </div>
         </section>
+
+        <!-- Skills -->
+        <section class="skills-section">
+            <div class="section-title">Skills</div>
+            <div id="skills-content">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
         <!-- Controls (Sticky) -->
         <div class="controls-bar">
             <div class="tabs">
-                <button class="tab-btn active" onclick="switchTab('projects')">Projects</button>
+                <button class="tab-btn active" onclick="switchTab('work')">Experience</button>
+                <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
                 <button class="tab-btn" onclick="switchTab('articles')">Articles</button>
             </div>
             <div class="search-bar">
                 <i class="fas fa-search"></i>
-                <input type="text" id="search-input" placeholder="Search projects, tags..." onkeyup="filterContent()">
+                <input type="text" id="search-input" placeholder="Search work, tags..." onkeyup="filterContent()">
             </div>
         </div>
 
@@ -61,7 +71,25 @@
         <div class="content-grid" id="content-grid">
             <!-- Populated by JS -->
         </div>
+
+        <!-- Certifications & Awards -->
+        <section class="certs-section">
+            <div class="section-title">Certifications &amp; Awards</div>
+            <div id="certs-content">
+                <!-- Populated by JS -->
+            </div>
+        </section>
     </main>
+
+    <!-- Work Project Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-panel" role="dialog" aria-modal="true">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+            <div id="modal-body">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
 
     <script src="data.js"></script>
     <script src="script.js"></script>

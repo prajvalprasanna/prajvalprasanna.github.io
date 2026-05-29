@@ -1,0 +1,5 @@
+# Reference material (resumes, LinkedIn export, project source docs)
+ref/
+
+# Local tooling / preview config
+.claude/
