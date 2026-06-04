@@ -2,15 +2,16 @@ const data = {
     profile: {
         name: "Prajval P",
         title: "Sr. Gen AI Engineer & Data Scientist",
-        about: "Gen AI Engineer & Data Scientist with 4 years of experience architecting scalable AI solutions on Azure and OCI. I specialize in agentic workflows, RAG pipelines, and multi-agent systems using LangGraph, MCP, and LLMs — turning complex business problems into production-grade AI.",
+        about: "Gen AI Engineer & Data Scientist with 4.6 years of experience architecting scalable AI solutions on Azure and OCI. I specialize in agentic workflows, RAG pipelines, and multi-agent systems using LangGraph, MCP, and LLMs — turning complex business problems into production-grade AI.",
         image: "image/profile_pic.jpg",
+        resume: "resume/Prajval P - Resume 20260508.pdf",
         contact: {
             email: "prajvalprasannakumar@gmail.com",
             phone: "",
             location: "Bengaluru, India"
         },
         social: [
-            { name: "LinkedIn", url: "https://www.linkedin.com/in/prajval-p-b0188b1a0/", icon: "fab fa-linkedin" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/prajval-p/", icon: "fab fa-linkedin" },
             { name: "GitHub", url: "https://github.com/prajvalprasanna", icon: "fab fa-github" },
             { name: "Credly", url: "https://www.credly.com/users/prajval-p", icon: "fas fa-certificate" },
             { name: "Medium", url: "https://medium.com/@prajvalprasannakumar", icon: "fab fa-medium" }

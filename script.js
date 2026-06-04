@@ -34,6 +34,16 @@ function loadProfile() {
         </a>
     `).join('');
 
+    // Resume Download Button
+    const resumeContainer = document.getElementById('resume-cta');
+    if (resumeContainer && p.resume) {
+        resumeContainer.innerHTML = `
+            <a href="${encodeURI(p.resume)}" class="resume-btn" download="Prajval_P_Resume.pdf">
+                <i class="fas fa-file-arrow-down"></i> Download Resume
+            </a>
+        `;
+    }
+
     // Timeline Rendering Helper
     const renderTimeline = (items, containerId) => {
         const container = document.getElementById(containerId);
